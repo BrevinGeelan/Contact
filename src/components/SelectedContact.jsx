@@ -7,7 +7,7 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
     const fetchContact = async () => {
         try {
             const response = await fetch(
-                `http://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users/${selectedContactId}`
+                `https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users/${selectedContactId}`
             );
             const data = await response.json();
             setContact(data);
